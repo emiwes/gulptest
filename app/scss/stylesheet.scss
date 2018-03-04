@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css?family=Zeyada');
+@import url('https://fonts.googleapis.com/css?family=Damion');
+
+$primaryColor: #1CE;
+$whiteColor: rgb(250, 250, 250);
+$primaryFont:'Helvetica';
+
+html, body{
+    height:100%;
+}
+body{
+    padding-left: 5px;
+    margin: 0;
+    background-color: $whiteColor;
+    font-family: $primaryFont;
+}
+
+.infoBox{
+    $length: 350px;
+    width: $length;
+    height: $length;
+    background-color:#f1e;
+    margin:50px;
+    flex-direction: column;
+    color:white;
+    box-shadow: 0px 0px 5px -2px black;
+
+    -webkit-transition: transform .5s, box-shadow .5s; /* Safari */
+    transition: transform .5s, box-shadow .5s;
+}
+
+.infoBox:hover{
+    box-shadow: 0px 0px 30px -10px black;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+#signature{
+    font-family: 'Damion', cursive;
+    font-size:80px;
+    margin-bottom: 50px;
+
+
+    .underline:after{
+        display:block;
+        content: '';
+        border-bottom: solid 3px #019fb6;
+        transform: scaleX(0);
+        transition: transform 1000ms ease-in-out;
+    }
+    .underlineAnimate:after{
+        transform: scaleX(1);
+    }
+}
+
+#infoMe{
+    background: url('../img/jag_blur.png') center;
+    background-size: cover;
+    h1{
+        font-weight: lighter;
+    }
+}
+
+#infoPortfolio{
+    h1{
+        font-weight: lighter;
+    }
+}
+
+#infoCV{
+    h1{
+        font-weight: lighter;
+    }
+}
